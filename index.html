@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Udemy | Learn on your schedule</title>
+    <style>
+      section {
+        padding: 40px 0;
+      }
+      .dropdown-menu,
+      .list-group, .card {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- !Header -->
+    <header class="fixed-top">
+      <!-- *top main navbar -->
+      <nav class="navbar navbar-expand navbar-light bg-white shadow-sm">
+        <div class="container d-md-flex">
+          <a
+            class="
+              navbar-brand
+              fs-3
+              fw-bolder
+              text-dark
+              d-none d-md-block
+              me-xl-5
+            "
+            href="/"
+          >
+            Udemy
+          </a>
+          <ul
+            class="
+              navbar-nav
+              d-flex
+              align-items-center
+              justify-content-md-between justify-content-center
+              w-100
+              gap-2 gap-xl-5
+            "
+          >
+            <li class="nav-item d-md-none">
+              <a
+                type="button"
+                href="#menu-sidebar"
+                data-bs-toggle="offcanvas"
+                role="button"
+                aria-controls="menu-sidebar"
+                class="nav-link fs-2"
+              >
+                <i class="bi bi-filter-left"></i>
+              </a>
+            </li>
+            <a class="nav-link d-md-none" type="button" href="#top-input">
+              <i class="bi bi-search fs-5"></i>
+            </a>
+            <a
+              class="
+                navbar-brand
+                fs-3
+                ms-4
+                fw-bolder
+                text-dark
+                d-md-none
+                flex-fill
+                text-center
+              "
+              href="/"
+            >
+              Udemy
+            </a>
+            <li class="nav-item dropdown d-none d-md-block">
+              <a
+                class="nav-link dropdown-toggle fs-5"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Web Development</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Mobile Development</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Game Development</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Entrepreneurship</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Business Analytics</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Digital Marketing</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Graphic Design</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>IT Certifications</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Personal Development</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Music</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Health & Fitness</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Lifestyle</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Photography & Video</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item flex-md-fill">
+              <form>
+                <input
+                  class="
+                    form-control
+                    shadow-none
+                    rounded-pill
+                    border-2
+                    ps-4
+                    d-none d-md-block
+                  "
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#cart-sidebar"
+                data-bs-toggle="offcanvas"
+                role="button"
+                aria-controls="cart-sidebar"
+              >
+                <i class="fs-5 bi bi-cart3"></i>
+              </a>
+            </li>
+            <li class="nav-item d-md-none dropstart">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fs-5 bi bi-person"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Courses</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Profile</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Settings</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <hr class="m-1" />
+                <li class="dropdown-item d-flex justify-content-between py-2">
+                  <span>Log out</span>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item d-none d-md-block">
+              <button class="btn btn-outline-dark">Log in</button>
+              <button class="btn btn-dark">Sign up</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- !main -->
+    <main>
+      <!--* 1)Intro -->
+      <section class="mt-5" id="intro">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+              <h1 class="display-3 lh-1 fw-normal">
+                A broad selection of courses
+              </h1>
+              <p class="lead my-4 text-muted">
+                Choose from 155,000 online video courses with new additions
+                published every month.
+              </p>
+              <div class="input-group">
+                <input
+                class="form-control shadow-none py-2"
+                type="search"
+                placeholder="What do you want to learn?"
+                aria-label="Search"
+                />
+                <span class="input-group-text">
+                  <i class="bi bi-search"></i>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+                <img
+                  class="img-fluid"
+                  src="assets/undraw_Online_learning_re_qw08.svg"
+                  alt="ebook cover"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--* 2)Courses tab  -->
+      <section>
+        <div class="container px-lg-5">
+          <div class="accordion accordion-flush" id="courseAccordion">
+
+            <!-- *Python -->
+            <div class="accordion-item bg-light">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button fs-5 collapsed shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Python
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#courseAccordion">
+                <div class="accordion-body d-flex flex-row gap-4 overflow-auto">
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/pyth.jpg" class="card-img-top" alt="python2">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+                        <p class="text-muted">Jose Portilla</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.6</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(374,286)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python2.jpg" class="card-img-top" alt="python2">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Machine Learning A-Z™: Hands-On Python & R In Data Science</h5>
+                        <p class="text-muted">Kirill Eremenko</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.5</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(148,520)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python3.jpg" class="card-img-top" alt="python3">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Python for Data Science and Machine Learning Bootcamp.</h5>
+                        <p class="text-muted">Jose Portilla</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.6</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(102,609)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Most popular</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python4.jpg" class="card-img-top" alt="python4">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Python Programming Masterclass Zero to complete</h5>
+                        <p class="text-muted">Tim Buchalka, Jean-Paul</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.5</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(78,624)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python5.jpg" class="card-img-top" alt="python5">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>100 Days of Code - The Complete Python Pro Bootcamp for 2021</h5>
+                        <p class="text-muted">Dr. Angela Yu</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.7</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(39,778)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Most popular</span></h5>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+
+            <!-- *Web Dev -->
+            <div class="accordion-item bg-light">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button fs-5 collapsed shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Web Development
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#courseAccordion">
+                <div class="accordion-body d-flex flex-row gap-4 overflow-auto">
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/wd1.jpg" class="card-img-top" alt="web dev">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>The Web Developer Bootcamp 2021 | Colt Steele</h5>
+                        <p class="text-muted">Colt Steele</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.7</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(210,197)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/wd2.jpg" class="card-img-top" alt="web dev">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>The Complete 2021 Web Development Bootcamp</h5>
+                        <p class="text-muted">Dr. Angela Yu</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.5</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(141,520)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/wd3.jpg" class="card-img-top" alt="web dev">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>The Complete Web Developer Course 2.0 | Rob percival</h5>
+                        <p class="text-muted">Rob percival</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.6</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(67,609)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Most popular</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python4.jpg" class="card-img-top" alt="web dev">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Python Programming Masterclass Zero to complete</h5>
+                        <p class="text-muted">Tim Buchalka, Jean-Paul</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.5</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(78,624)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python5.jpg" class="card-img-top" alt="web dev">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>100 Days of Code - The Complete Python Pro Bootcamp for 2021</h5>
+                        <p class="text-muted">Dr. Angela Yu</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.7</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(39,778)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Most popular</span></h5>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+
+            <!-- *Javascript -->
+            <div class="accordion-item bg-light">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button fs-5 collapsed shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  JavaScript
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#courseAccordion">
+                <div class="accordion-body d-flex flex-row gap-4 overflow-auto">
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/js1.jpg" class="card-img-top" alt="JS">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>The Complete JavaScript Course 2021: From Zero to Expert!</h5>
+                        <p class="text-muted">Jonas Schmedtmann</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.7</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(110,286)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/js2.jpg" class="card-img-top" alt="JS">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>JavaScript: Understanding the Weird Parts</h5>
+                        <p class="text-muted">Anthony Alicea</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.5</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(41,520)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/js3.jpg" class="card-img-top" alt="JS">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Modern JavaScript From The Beginning | traversy Media</h5>
+                        <p class="text-muted">Brad Traversy</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.6</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(25,609)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Most popular</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python4.jpg" class="card-img-top" alt="JS">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Python Programming Masterclass Zero to complete</h5>
+                        <p class="text-muted">Tim Buchalka, Jean-Paul</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.5</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(78,624)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python5.jpg" class="card-img-top" alt="JS">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>100 Days of Code - The Complete Python Pro Bootcamp for 2021</h5>
+                        <p class="text-muted">Dr. Angela Yu</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.7</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(39,778)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Most popular</span></h5>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+
+            <!-- *Data Science -->
+            <div class="accordion-item bg-light">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button fs-5 collapsed shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Data Science
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#courseAccordion">
+                <div class="accordion-body d-flex flex-row gap-4 overflow-auto">
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/ds1.jpg" class="card-img-top" alt="Data science">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>The Data Science Course 2021: Complete Data Science Bootcamp</h5>
+                        <p class="text-muted">365 Careers</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.6</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(94,286)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python2.jpg" class="card-img-top" alt="Data science">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Machine Learning A-Z™: Hands-On Python & R In Data Science</h5>
+                        <p class="text-muted">Kirill Eremenko</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.5</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(148,520)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python3.jpg" class="card-img-top" alt="Data science">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Python for Data Science and Machine Learning Bootcamp.</h5>
+                        <p class="text-muted">Jose Portilla</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.6</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(102,609)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Most popular</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python4.jpg" class="card-img-top" alt="Data science">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Python Programming Masterclass Zero to complete</h5>
+                        <p class="text-muted">Tim Buchalka, Jean-Paul</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.5</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(78,624)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python5.jpg" class="card-img-top" alt="Data science">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>100 Days of Code - The Complete Python Pro Bootcamp for 2021</h5>
+                        <p class="text-muted">Dr. Angela Yu</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.7</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(39,778)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Most popular</span></h5>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+
+            <!-- *AWS -->
+            <div class="accordion-item bg-light">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button fs-5 collapsed shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  AWS Certification
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#courseAccordion">
+                <div class="accordion-body d-flex flex-row gap-4 overflow-auto">
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/aws1.jpg" class="card-img-top" alt="AWS">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Ultimate AWS Certified Solutions Architect Associate 2021</h5>
+                        <p class="text-muted">Stephen Mareek</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.7</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(42,286)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/aws2.jpg" class="card-img-top" alt="AWS">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Amazon Web Services (AWS) Certified - 4 Certifications!</h5>
+                        <p class="text-muted">Paul Coady</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.5</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(18,520)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python3.jpg" class="card-img-top" alt="AWS">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Python for Data Science and Machine Learning Bootcamp.</h5>
+                        <p class="text-muted">Jose Portilla</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.6</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(102,609)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Most popular</span></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python4.jpg" class="card-img-top" alt="AWS">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>Python Programming Masterclass Zero to complete</h5>
+                        <p class="text-muted">Tim Buchalka, Jean-Paul</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.5</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(78,624)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Best seller</span></h5>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card col-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3 border-0 shadow-sm" >
+                    <img height="170px" src="assets/courses/python5.jpg" class="card-img-top" alt="AWS">
+                    <div class="card-body d-flex flex-column">
+                      <div class="flex-fill">
+                        <h5>100 Days of Code - The Complete Python Pro Bootcamp for 2021</h5>
+                        <p class="text-muted">Dr. Angela Yu</p>
+                      </div>
+                      <div>
+                        <div class="text-warning">
+                          <span>4.7</span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <small class="text-secondary">(39,778)</small>
+                        </div>
+                        <div>
+                          <span class="fw-bold">$13.99</span>
+                          <del>$89.99</del>
+                        </div>
+                        <h5><span class="badge bg-success">Most popular</span></h5>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- *Features -->
+      <section class="bg-light">
+        <div class="container">
+          <div class="text-center mt-3 mb-4">
+            <h2>Why learn on Udemy?</h2>
+          </div>
+          <div class="row align-items-center justify-content-start g-4 px-4 px-md-0">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="d-flex justify-content-between gap-3 align-items-center">
+                <div class="bg-dark text-white py-2 px-3 rounded-circle">
+                  <i class="bi bi-play-fill fs-1"></i>
+                </div>
+                <h5 class="text-secondary">Over 155,00 video courses on career and personal skills</h5>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="d-flex justify-content-around gap-3 align-items-center">
+                <div class="bg-dark text-white py-2 px-3 rounded-circle">
+                  <i class="bi bi-star-fill fs-1"></i>
+                </div>
+                <h5 class="text-secondary">Choose from top instructors on industry across the world</h5>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="d-flex justify-content-around gap-3 align-items-center">
+                <div class="bg-dark text-white py-2 px-3 rounded-circle">
+                  <i class="bi bi-alarm-fill fs-1"></i>
+                </div>
+                <h5 class="text-secondary">Learn at your pace, with lifetime access on mobile and desktop</h5>
+              </div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- !Offcanvases -->
+    <!--* 1)hamburger offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="menu-sidebar"
+      aria-labelledby="menu-sidebar-label"
+    >
+      <div class="offcanvas-header d-flex justify-content-between">
+        <!-- *user logged out -->
+        <!-- <div class="d-grid col-10 flex-fill">
+          <a href="#" type="button" class="btn btn-outline-dark shadow-none">
+            Log In
+          </a>
+        </div> -->
+
+        <!-- *user logged in -->
+        <div class="container-fluid d-flex gap-3 align-items-center">
+          <img
+            src="https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png"
+            alt=""
+            class="rounded-circle border border-5 bg-dark"
+            height="80px"
+            width="80px"
+          />
+          <div>
+            <h2>Mostofa Nobi</h2>
+            <a href="#">Manage account</a>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn-close mx-3 shadow-none"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <!-- menu-items -->
+        <ul class="list-group">
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Web Development</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Mobile Development</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Game Development</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Entrepreneurship</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Business Analytics</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Digital Marketing</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Graphic Design</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>IT Certifications</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Personal Development</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Music</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Health & Fitness</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Lifestyle</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-between
+              py-3
+              border-0
+            "
+          >
+            <span>Photography & Video</span>
+            <i class="bi bi-chevron-right"></i>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="offcanvas-footer container">
+        <p>
+          <a class="link-secondary" href="#">About Us</a> &middot;
+          <a class="link-secondary" href="#">Contact us</a> &middot;
+          <a class="link-secondary" href="#">Privacy Policy</a> &middot;
+          <a class="link-secondary" href="#">Purchasing Policy</a> &middot;
+          <a class="link-secondary" href="#">Refund Policy</a> &middot;
+          <a class="link-secondary" href="#">Cookie Policy</a> &middot;
+          <a class="link-secondary" href="#">Term & Conditions</a>
+        </p>
+        <p>&copy; udemy.com Limited 2021</p>
+      </div> -->
+    </div>
+
+    <!--* 2)cart offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="cart-sidebar"
+      aria-labelledby="cart-sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Cart</h5>
+        <button
+          type="button"
+          class="btn-close shadow-none"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- empty-cart -->
+        <div class="d-flex flex-column gap-3 justify-content-start align-items-center h-100">
+          <img width="350" src="assets/undraw_empty_xct9.png" alt="">
+          <h5>Your cart is empty</h5>
+          <button class="btn btn-dark btn-lg w-100 shadow-none">Enroll now</button>
+        </div>
+      </div>
+      <div class="offcanvas-footer"></div>
+      <!-- <div class="offcanvas-footer container">
+        <dl class="d-flex justify-content-around fs-3">
+          <dt class="fw-normal">Sub Total</dt>
+          <dd>$00.00</dd>
+        </dl>
+        <div class="mb-4 text-center">
+          <button
+            class="btn btn-dark py-2 fs-4 shadow-none w-100 disabled"
+            type="button"
+          >
+            Checkout<i class="bi bi-arrow-right ms-2"></i>
+          </button>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
